@@ -130,7 +130,7 @@ app.get('/listado', async function(req, res) {
 /*#####--------#####*/
 
 /*#####Editar Estados de Animo#####*/
-app.get('/:id', async function(req, res) {
+app.get('/editar/:id', async function(req, res) {
   if (!req.session.user_id) {
     res.redirect('/login');
     return;
@@ -139,7 +139,7 @@ app.get('/:id', async function(req, res) {
     console.log(UpdateAnimo);
     res.render('animo', { datos: UpdateAnimo });
 });
-app.post('/:id', async function(req, res) {
+app.post('/editar/:id', async function(req, res) {
     await Animo.findByIdAndUpdate({ _id: req.params.id },{ animo: req.body.animo, detalle: req.body.detalle });
     res.redirect('/listado');
 });
