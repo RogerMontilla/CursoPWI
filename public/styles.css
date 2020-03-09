@@ -1,0 +1,31 @@
+body{
+    /* background: #eef4f3; */
+    background: url('./fondo.png');
+}
+
+table{
+    margin-top: 5rem;
+    background: rgba(255, 255, 255, 0.767);
+}
+
+.box{
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 2px solid #17a2b8;
+    border-radius: 5px;
+    margin-top: 6rem;
+    background: rgba(255, 255, 255, 0.767);
+}
+.content{
+    padding: 2rem;
+}
+.listado{
+    margin-top: 2rem;
+}
+a{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.titulo{
+    margin-top: 6rem;
+}

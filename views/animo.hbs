@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <a class="navbar-brand" href="/animo">
+    <img src="./animo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    SPF</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/animo">Nuevo<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/listado">Ver Listado</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/acerca">Acerca de</a>
+      </li>
+    </ul>
+  </div>
+  <a class="btn btn-outline-danger" href="/salir">Salir</a>
+</nav>
+
+<div class="container col-md-4 box">
+    <h2 class="p-3 mb-2 bg-info text-white text-center">Estado de Ánimo</h2>
+<div class="content">
+    <form method="POST">
+      <div class="form-group">
+        <label for="animo">Cómo te sientes programando hoy?</label>
+        <select class="form-control" id="animo" name="animo">
+          <option>I'm the best</option>
+          <option>Excelente</option>
+          <option>Regular</option>
+          <option>Bien</option>
+          <option>Mal</option>
+          <option>Tuve mejores días</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Danos mas detalles...</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="detalle">{{datos.detalle}}</textarea>
+      </div>
+      <button type="submit" class="btn btn-info">Guardar</button>
+    </form>
+</div>
+</div>
